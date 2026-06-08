@@ -122,6 +122,14 @@ nav a:hover{
     border-color:#d4af37;
 }
 
+.product-image{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+    border-radius:12px;
+    margin-bottom:15px;
+}
+
 .card h3{
     margin-bottom:10px;
     color:#fff;
@@ -184,6 +192,12 @@ footer{
         <?php while($product = $result->fetch_assoc()): ?>
 
             <div class="card">
+
+                <img
+                    src="assets/images/<?php echo htmlspecialchars($product['image']); ?>"
+                    alt="<?php echo htmlspecialchars($product['name']); ?>"
+                    class="product-image"
+                >
 
                 <h3>
                     <?php echo htmlspecialchars($product['name']); ?>
