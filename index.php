@@ -18,11 +18,13 @@ $result = $conn->query("SELECT * FROM products");
 <body>
 
 <nav>
-    <div class="logo">TECHCART</div>
+    <div class="logo">
+        TECHCART
+    </div>
 
     <ul>
         <li><a href="index.php">Home</a></li>
-        <li><a href="index.php#products">Products</a></li>
+        <li><a href="#products">Products</a></li>
         <li><a href="cart.php">Cart</a></li>
         <li><a href="checkout.php">Checkout</a></li>
     </ul>
@@ -34,7 +36,7 @@ $result = $conn->query("SELECT * FROM products");
 
     <p>
         Discover premium technology designed for those who demand excellence,
-        performance, and elegance.
+        performance and elegance.
     </p>
 
     <a href="#products" class="btn">
@@ -59,31 +61,28 @@ $result = $conn->query("SELECT * FROM products");
             class="product-image"
             >
 
-            <h3>
-                <a
-                href="product.php?id=<?php echo $product['id']; ?>"
-                class="product-link"
-                >
+            <div class="card-content">
+
+                <h3>
                     <?php echo htmlspecialchars($product['name']); ?>
+                </h3>
+
+                <p>
+                    <?php echo htmlspecialchars($product['description']); ?>
+                </p>
+
+                <div class="price">
+                    $<?php echo number_format($product['price'], 2); ?>
+                </div>
+
+                <a
+                href="add_to_cart.php?id=<?php echo $product['id']; ?>"
+                class="btn btn-cart"
+                >
+                    Add To Cart
                 </a>
-            </h3>
 
-            <p>
-                <?php echo htmlspecialchars($product['description']); ?>
-            </p>
-
-            <div class="price">
-                $<?php echo number_format($product['price'], 2); ?>
             </div>
-
-            <br>
-
-            <a
-            href="add_to_cart.php?id=<?php echo $product['id']; ?>"
-            class="btn"
-            >
-                Add To Cart
-            </a>
 
         </div>
 
