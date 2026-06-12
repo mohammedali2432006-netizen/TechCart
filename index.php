@@ -1,7 +1,7 @@
 <?php
 require_once 'db.php';
 
-$result = $conn->query("SELECT * FROM products");
+$result = $conn->query("SELECT * FROM products LIMIT 5");
 ?>
 
 <!DOCTYPE html>
