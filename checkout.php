@@ -1,11 +1,39 @@
 <?php
 session_start();
+require_once 'db.php';
 
 $cart = $_SESSION['cart'] ?? [];
 $total = 0;
 
 foreach ($cart as $item) {
     $total += $item['price'];
+}
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $address = $_POST['address'];
+
+    $stmt = $conn->prepare("
+        INSERT INTO orders
+        (customer_name, customer_email, customer_address, total)
+        VALUES (?, ?, ?, ?)
+    ");
+
+    $stmt->bind_param(
+        "sssd",
+        $name,
+        $email,
+        $address,
+        $total
+    );
+
+    $stmt->execute();
+
+    $_SESSION['cart'] = [];
+
+    $success = true;
 }
 ?>
 
@@ -63,6 +91,16 @@ foreach ($cart as $item) {
     text-align:center;
 }
 
+.success-message{
+    background:#28a745;
+    color:white;
+    padding:15px;
+    border-radius:10px;
+    margin-bottom:20px;
+    text-align:center;
+    font-weight:bold;
+}
+
 </style>
 
 </head>
@@ -85,21 +123,27 @@ foreach ($cart as $item) {
         Checkout
     </h1>
 
-    <form>
+    <?php if(isset($success)): ?>
+        <div class="success-message">
+            Order placed successfully!
+        </div>
+    <?php endif; ?>
+
+    <form method="POST">
 
         <div class="form-group">
             <label>Full Name</label>
-            <input type="text" required>
+            <input type="text" name="name" required>
         </div>
 
         <div class="form-group">
             <label>Email</label>
-            <input type="email" required>
+            <input type="email" name="email" required>
         </div>
 
         <div class="form-group">
             <label>Address</label>
-            <input type="text" required>
+            <input type="text" name="address" required>
         </div>
 
         <div class="total">
