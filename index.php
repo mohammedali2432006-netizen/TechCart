@@ -12,19 +12,16 @@ $result = $conn->query("SELECT * FROM products LIMIT 5");
 <title>TechCart Luxury Store</title>
 
 <link rel="stylesheet" href="assets/css/style.css">
-
 </head>
 
 <body>
 
 <nav>
-    <div class="logo">
-        TECHCART
-    </div>
+    <div class="logo">TECHCART</div>
 
     <ul>
         <li><a href="index.php">Home</a></li>
-        <li><a href="#products">Products</a></li>
+        <li><a href="products.php">Products</a></li>
         <li><a href="cart.php">Cart</a></li>
         <li><a href="checkout.php">Checkout</a></li>
     </ul>
@@ -39,7 +36,7 @@ $result = $conn->query("SELECT * FROM products LIMIT 5");
         performance and elegance.
     </p>
 
-    <a href="#products" class="btn">
+    <a href="products.php" class="btn">
         Explore Collection
     </a>
 
@@ -55,11 +52,16 @@ $result = $conn->query("SELECT * FROM products LIMIT 5");
 
         <div class="card">
 
-            <img
-            src="assets/images/<?php echo htmlspecialchars($product['image']); ?>"
-            alt="<?php echo htmlspecialchars($product['name']); ?>"
-            class="product-image"
-            >
+            <!-- فتح صفحة المنتج -->
+            <a href="product.php?id=<?php echo $product['id']; ?>">
+
+                <img
+                    src="assets/images/<?php echo htmlspecialchars($product['image']); ?>"
+                    alt="<?php echo htmlspecialchars($product['name']); ?>"
+                    class="product-image"
+                >
+
+            </a>
 
             <div class="card-content">
 
@@ -76,8 +78,8 @@ $result = $conn->query("SELECT * FROM products LIMIT 5");
                 </div>
 
                 <a
-                href="add_to_cart.php?id=<?php echo $product['id']; ?>"
-                class="btn btn-cart"
+                    href="add_to_cart.php?id=<?php echo $product['id']; ?>"
+                    class="btn btn-cart"
                 >
                     Add To Cart
                 </a>
