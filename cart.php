@@ -104,7 +104,8 @@ $total = 0;
     <ul>
         <li><a href="index.php">Home</a></li>
         <li><a href="cart.php">Cart</a></li>
-        <li><a href="checkout.php">Checkout</a></li>
+        <li><a href="contact.php">Contact Us</a></li>
+        
     </ul>
 </nav>
 

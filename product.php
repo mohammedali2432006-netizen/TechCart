@@ -20,11 +20,12 @@ $result = $conn->query("SELECT * FROM products");
     <div class="logo">TECHCART</div>
 
     <ul>
-        <li><a href="index.php">Home</a></li>
-        <li><a href="products.php">Products</a></li>
-        <li><a href="cart.php">Cart</a></li>
-        <li><a href="checkout.php">Checkout</a></li>
-    </ul>
+    <li><a href="index.php">Home</a></li>
+    <li><a href="products.php">Products</a></li>
+    <li><a href="about.php">About Us</a></li>
+    <li><a href="cart.php">Cart</a></li>
+    <li><a href="contact.php">Contact Us</a></li>
+</ul>
 </nav>
 
 <section class="products">
