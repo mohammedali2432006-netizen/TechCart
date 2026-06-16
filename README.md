@@ -6,6 +6,8 @@
 
 Name: Mohammed Ali
 
+Reg number:24611/2024
+
 Course: EWA408510 – E-Commerce and Web Application
 
 Project Title: TechCart E-Commerce Store
@@ -13,15 +15,11 @@ Project Title: TechCart E-Commerce Store
 GitHub Repository:
 https://github.com/mohammedali2432006-netizen/TechCart
 
----
-
 ## Project Overview
 
 TechCart is a web-based e-commerce application developed using PHP, MySQL, Docker, HTML, and CSS. The platform allows users to browse products, view product details, add items to a shopping cart, register accounts, log in, and complete the checkout process.
 
 The project was developed following e-commerce development principles and demonstrates database integration, user authentication, session management, and responsive web design.
-
----
 
 ## Technologies Used
 
@@ -33,9 +31,7 @@ The project was developed following e-commerce development principles and demons
 * Git
 * GitHub
 * phpMyAdmin
-
----
-
+  
 ## Features Implemented
 
 ### Product Management
@@ -74,8 +70,6 @@ The project was developed following e-commerce development principles and demons
 * Checkout Page
 * About Us Page
 * Contact Us Page
-
----
 
 ## Database Design
 
@@ -116,8 +110,6 @@ Stores customer orders:
 
 Stores products associated with each order.
 
----
-
 ## Version Control
 
 Git and GitHub were used to manage project development.
@@ -134,8 +126,6 @@ The repository was updated regularly throughout development.
 GitHub Repository:
 https://github.com/mohammedali2432006-netizen/TechCart
 
----
-
 ## Challenges Encountered
 
 Several challenges were encountered during development:
@@ -148,8 +138,6 @@ Several challenges were encountered during development:
 6. Navigation and UI design improvements.
 
 These challenges were solved through debugging, testing, and configuration updates.
-
----
 
 ## Conclusion
 
@@ -169,7 +157,6 @@ The project improved practical skills in web application development, database d
 ### Cart Page
 ![cart page](screenshots/cart.png)
 
-## Screenshots
 ### checkout page
 ![checkout page](screenshots/checkout.png)
 
@@ -178,6 +165,3 @@ The project improved practical skills in web application development, database d
 
 ### about us Page
 ![aboutus page](screenshots/aboutus.png)
-
-### Cart Page
-![cart page](screenshots/cart.png)
