@@ -158,13 +158,13 @@ The TechCart project successfully demonstrates the development of a functional e
 The project improved practical skills in web application development, database design, version control, and containerized deployment using Docker.
 ## Screenshots
 ### Home page
-![Home page](screenshots/Homepage.png)
+![Home page](screenshots/homepage.png)
 
 ### Contact Us Page
 ![contact page](screenshots/contactus.png)
 
 ### Product Page
-![product page](screenshots/product.png.png)
+![product page](screenshots/products.png)
 
 ### Cart Page
 ![cart page](screenshots/cart.png)
