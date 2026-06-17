@@ -1,71 +1,78 @@
-# TechCart# TechCart E-Commerce Store
+# TechCart E-Commerce Store
 
 ## Final Project Report
 
 ### Student Information
 
-Name: Mohammed Ali
+**Name:** Mohammed Ali
 
-Reg number:24611/2024
+**Registration Number:** 24611/2024
 
-Course: EWA408510 – E-Commerce and Web Application
+**Course:** EWA408510 – E-Commerce and Web Application
 
-Project Title: TechCart E-Commerce Store
-
-### GitHub Repository:
-https://github.com/mohammedali2432006-netizen/TechCart
+**Project Title:** TechCart E-Commerce Store
 
 
-### my store link
-http://techcart.fwh.is
+# 1. Introduction
 
-## Project Overview
+TechCart is a web-based e-commerce application developed to provide users with an online shopping experience. The system allows customers to browse products, add items to a shopping cart, create accounts, log in, and complete purchases through a simple and user-friendly interface.
 
-TechCart is a web-based e-commerce application developed using PHP, MySQL, Docker, HTML, and CSS. The platform allows users to browse products, view product details, add items to a shopping cart, register accounts, log in, and complete the checkout process.
+The project was developed using PHP, MySQL, HTML, CSS, Docker, Git, and GitHub. It demonstrates important web development concepts such as database integration, user authentication, session management, version control, and deployment.
 
-The project was developed following e-commerce development principles and demonstrates database integration, user authentication, session management, and responsive web design.
 
-## Technologies Used
+# 2. Problem Statement
 
-* PHP
-* MySQL
-* HTML5
-* CSS3
-* Docker
-* Git
-* GitHub
-* phpMyAdmin
-  
-## Features Implemented
+Many customers need a convenient way to browse products and place orders without visiting physical stores. Traditional shopping methods can be time-consuming and less accessible.
 
-### Product Management
+The purpose of TechCart is to provide an online platform where users can view products, manage shopping carts, register accounts, and place orders efficiently through a web application.
+
+
+# 3. Objectives
+
+The main objectives of this project are:
+
+* Develop a functional e-commerce website.
+* Implement product browsing and management features.
+* Allow users to add products to a shopping cart.
+* Implement user registration and login functionality.
+* Store data securely using MySQL.
+* Apply Docker containerization concepts.
+* Use Git and GitHub for version control.
+* Deploy the application online.
+* Demonstrate practical web development skills.
+
+
+# 4. System Features
+
+## Product Management
 
 * Display featured products on the homepage.
-* Browse all products through the Products page.
-* Product details page for each item.
-* Product images and descriptions.
+* Browse products by category.
+* View product details.
+* Display product images and descriptions.
 
-### Shopping Cart
+## Shopping Cart
 
 * Add products to cart.
+* Remove products from cart.
 * View cart contents.
 * Calculate total order value.
-* Proceed to checkout.
 
-### Checkout System
+## Checkout System
 
 * Customer information form.
-* Order summary.
+* Order summary display.
 * Total price calculation.
+* Save orders to the database.
 
-### User Authentication
+## User Authentication
 
 * User registration.
 * User login.
 * Session management.
-* User roles (Admin and User).
+* User and Admin roles.
 
-### Additional Pages
+## Additional Pages
 
 * Home Page
 * Products Page
@@ -75,97 +82,151 @@ The project was developed following e-commerce development principles and demons
 * About Us Page
 * Contact Us Page
 
-## Database Design
 
-The database contains the following tables:
+# 5. Technologies Used
 
-### products
+The following technologies were used during development:
 
-Stores product information:
+* PHP
+* MySQL
+* HTML5
+* CSS3
+* Docker
+* Git
+* GitHub
+* phpMyAdmin
+* InfinityFree Hosting
 
-* Product ID
-* Name
-* Description
-* Price
-* Image
-* Category
 
-### users
+# 6. System Architecture
 
-Stores user account information:
+The system follows a three-layer architecture:
 
-* User ID
-* Name
-* Email
-* Password
-* Role (Admin/User)
+## Presentation Layer
 
-### orders
+Responsible for displaying the user interface.
 
-Stores customer orders:
+* HTML
+* CSS
+* PHP Pages
 
-* Order ID
-* User ID
-* Total Amount
-* Address
-* Date
+## Application Layer
 
-### order_items
+Responsible for handling business logic.
 
-Stores products associated with each order.
+* User Authentication
+* Shopping Cart Logic
+* Checkout Processing
+* Session Management
 
-## Version Control
+## Data Layer
 
-Git and GitHub were used to manage project development.
+Responsible for storing and retrieving data.
 
-Commands used:
+* MySQL Database
+* Products Table
+* Users Table
+* Orders Table
 
-* git add .
-* git commit -m "message"
-* git push origin main
-* git pull origin main
+### Architecture Flow
 
-The repository was updated regularly throughout development.
+User → Web Interface (PHP) → MySQL Database
 
-GitHub Repository:
+
+# 7. Screenshots
+
+## Home Page
+
+![Home Page](screenshots/homepage.png)
+
+## Products Page
+
+![Products Page](screenshots/products.png)
+
+## Cart Page
+
+![Cart Page](screenshots/cart.png)
+
+## Checkout Page
+
+![Checkout Page](screenshots/checkout.png)
+
+## Login Page
+
+![Login Page](screenshots/login.png)
+
+## Contact Us Page
+
+![Contact Us Page](screenshots/contactus.png)
+
+## About Us Page
+
+![About Us Page](screenshots/aboutus.png)
+
+
+# 8. GitHub Repository Link
+
 https://github.com/mohammedali2432006-netizen/TechCart
 
-## Challenges Encountered
 
-Several challenges were encountered during development:
+# 9. Deployment Link
 
-1. Database connection issues between PHP and MySQL containers.
-2. Docker networking configuration.
-3. Shopping cart session handling.
-4. Product image display issues.
+http://techcart.fwh.is
+
+---
+
+# 10. CI/CD Description
+
+Continuous Integration and Continuous Deployment (CI/CD) were implemented using GitHub Actions.
+
+The workflow automatically performs the following steps whenever code is pushed to the GitHub repository:
+
+1. Pull the latest source code.
+2. Verify the project files.
+3. Run the workflow automatically.
+4. Deploy updated files to InfinityFree hosting.
+5. Update the live website.
+
+Benefits of CI/CD:
+
+* Faster deployment process.
+* Reduced manual work.
+* Improved project maintenance.
+* Automatic synchronization between GitHub and the live website.
+
+
+# 11. Challenges Encountered
+
+Several challenges were faced during development:
+
+1. Database connection issues between PHP and MySQL.
+2. Docker configuration and networking setup.
+3. Shopping cart session management.
+4. Product image display problems.
 5. User authentication implementation.
-6. Navigation and UI design improvements.
+6. Database migration from local environment to hosting.
+7. Deployment configuration on InfinityFree.
+8. GitHub Actions CI/CD setup and troubleshooting.
 
-These challenges were solved through debugging, testing, and configuration updates.
+These issues were resolved through testing, debugging, and configuration updates.
 
-## Conclusion
 
-The TechCart project successfully demonstrates the development of a functional e-commerce website using PHP, MySQL, Docker, Git, and GitHub. The system integrates product management, user authentication, shopping cart functionality, and checkout processing.
+# 12. Future Work
 
-The project improved practical skills in web application development, database design, version control, and containerized deployment using Docker.
-## Screenshots
-### Home page
-![Home page](screenshots/homepage.png)
+The project can be improved further by implementing:
 
-### Contact Us Page
-![contact page](screenshots/contactus.png)
+* Online payment gateway integration.
+* Product search functionality.
+* Product filtering and sorting.
+* Email notifications for orders.
+* Inventory management features.
+* Enhanced Admin Dashboard.
+* Product reviews and ratings.
+* Mobile application support.
 
-### Product Page
-![product page](screenshots/products.png)
 
-### Cart Page
-![cart page](screenshots/cart.png)
+# 13. Conclusion
 
-### checkout page
-![checkout page](screenshots/checkout.png)
+TechCart successfully demonstrates the development of a complete e-commerce web application using PHP, MySQL, Docker, Git, GitHub, and InfinityFree hosting.
 
-### login Page
-![login page](screenshots/login.png)
-
-### about us Page
-![aboutus page](screenshots/aboutus.png)
+The project includes product management, shopping cart functionality, checkout processing, user authentication, database integration, version control, deployment, and CI/CD implementation. Through this project, valuable practical skills in web development, database design, deployment, and software engineering practices were gained.
