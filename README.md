@@ -12,9 +12,11 @@ Course: EWA408510 – E-Commerce and Web Application
 
 Project Title: TechCart E-Commerce Store
 
-GitHub Repository:
+### GitHub Repository:
 https://github.com/mohammedali2432006-netizen/TechCart
-my store link
+
+
+### my store link
 http://techcart.fwh.is
 
 ## Project Overview
